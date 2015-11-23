@@ -1,0 +1,44 @@
+### PHONEGAP IOS WEBVIEW PROTOTYPE PODFILE ###
+
+# This file must simply be named Podfile in your native iOS project
+
+# Define a global platform for your project
+platform :ios, '8.0'
+
+# CordovaLib Dependency Pod
+pod 'Cordova'
+
+# Cordova Core Plugin Dependency Pod References
+pod 'CordovaPlugin-console'
+pod 'CordovaPlugin-device'
+pod 'CordovaPlugin-dialogs'
+pod 'CordovaPlugin-globalization'
+pod 'CordovaPlugin-geolocation'
+pod 'CordovaPlugin-device-orientation'
+pod 'CordovaPlugin-battery-status'
+pod 'CordovaPlugin-vibration'
+pod 'CordovaPlugin-device-motion'
+pod 'CordovaPlugin-network-information'
+pod 'CordovaPlugin-battery-status'
+pod 'CordovaPlugin-splashscreen'
+pod 'CordovaPlugin-geolocation'
+pod 'CordovaPlugin-contacts'
+pod 'CordovaPlugin-inappbrowser'
+pod 'CordovaPlugin-FileManager'
+pod 'CordovaPlugin-media'
+
+# The following includes the PhoneGap iOS Platform Project Template for a quick start
+pod 'ios-webview-www'
+
+# Change the target value to the name of your native Xcode project
+target 'iOS-Webview-Proto' do
+
+end
+
+target 'iOS-Webview-ProtoTests' do
+
+end
+
+target 'iOS-Webview-ProtoUITests' do
+
+end
