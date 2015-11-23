@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.frameworks = "AssetsLibrary"
   s.dependency "Cordova", ">= 3.0.0"
-  s.dependency "cordova-plugin-file"  
+    
   
     
 end
