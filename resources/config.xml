@@ -79,7 +79,9 @@
     <feature name="Capture">
         <param name="ios-package" value="CDVCapture" />
     </feature>
-
+    <feature name="FileTransfer">
+        <param name="ios-package" value="CDVFileTransfer" />
+    </feature>
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="BackupWebStorage" value="cloud" />
     <preference name="DisallowOverscroll" value="false" />
