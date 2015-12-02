@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name               = “phonegap-ios-template”
+  s.name               = "phonegap-ios-template"
   s.version            = "0.1.0"
   s.summary            = "PhoneGap sample template project for iOS."
 
