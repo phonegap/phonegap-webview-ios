@@ -24,5 +24,6 @@ Pod::Spec.new do |s|
   s.frameworks = "CoreGraphics","MobileCoreServices","CoreMedia"
   s.weak_frameworks = "ImageIO"
   s.dependency "Cordova", ">= 3.0.0"
+  s.dependency 'cordova-plugin-file'
 
 end
