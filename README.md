@@ -17,7 +17,7 @@ all of the Cordova dependency pods.
 4. You're ready to use any of the Cordova dependencies, for example the `CDVViewController`. See below for further details. 
 
 ### Detailed Usage - Embedding Cordova in a Native iOS Project
-[Short Demo Video](https://www.youtube.com/watch?v=AzGmTeMsXxI)
+[Short Demo Video](https://www.youtube.com/watch?v=M6Q6ak7UfvQ)
 
 **NOTE:** This project assumes you have [previously installed CocoaPods](https://guides.cocoapods.org/using/getting-started.html) 
 
@@ -25,7 +25,7 @@ all of the Cordova dependency pods.
 ![Create Single View Project](_imgs/step1.png)
 2. Create a `Podfile` in the root of your project from the command line 
   - Type `pod init` to create a base Podfile
-  - Open it and replace the contents with those from the [Podfile_sample](Podfile_sample) prior to the `target` specification lines ([see demo video](https://www.youtube.com/watch?v=AzGmTeMsXxI))  
+  - Open it and replace the contents with those from the [Podfile_sample](Podfile_sample) prior to the `target` specification lines ([see demo video](https://www.youtube.com/watch?v=M6Q6ak7UfvQ))  
 3. Run `pod install` from command line to install the Cordova dependencies
 ![Install](_imgs/install.png)
 4. Close your Xcode project 
