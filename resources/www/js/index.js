@@ -57,19 +57,8 @@ var app = {
     receivedEvent: function (id) {
         console.log('Received Event: ' + id);
         var log = document.getElementById("log");
-        log.setAttribute('style', 'display:block;width: 95%;height: 800px;position: absolute; top: 370px; left: 5px; right:5px; ');
+        log.setAttribute('style', 'display:block;width: 95%;height: 320px; position: absolute; top: 300px; left: 5px; right:5px; ');
         log.value+="DEVICE READY FIRED!!!\n\n";
-        //app.testPlugins();
-    },
-    testPlugins: function () {
-        log.value+="RUNNING PLUGIN TESTS...\n";
-        app.testContacts();
-        app.testConnection();
-        app.testDevice();
-        app.testFile();
-        app.testFileTransfer();
-        app.testStatusBar();
-        app.testVibration();
     },
     testConnection: function () {
         var networkState = navigator.connection.type;
@@ -89,7 +78,7 @@ var app = {
     testContacts: function () {
         var log = document.getElementById("log");
         log.value += "Contacts plugin test " + navigator.contacts + '\n';
-        // find all contacts with 'Bob' in any name field
+        // find all contacts with 't' in any name field
         var options = new ContactFindOptions();
         options.filter = "t";
         options.multiple = true;
@@ -112,7 +101,7 @@ var app = {
     },
     testDevice: function () {
         var log = document.getElementById("log");
-        log.value += 'Device plugin test - platform ' + device.platform + '\n';
+        log.value += 'Device plugin test - platform is ' + device.platform + '\n';
     },
     testDeviceMotion: function () {
         alert("Start Device Motion plugin to get acceleration");
@@ -125,19 +114,19 @@ var app = {
                 '\tAcceleration Z: ' + acceleration.z + '\n' +
                 '\tTimestamp: ' + acceleration.timestamp + '\n';
             },
-            function (error) {
+            function () {
                 log.value+= "Accelerometer error " + error;
             });
     },
     testDeviceOrientation: function () {
-        alert("Start Device orientation to get current heading (compass) ");
+        alert("Start Device orientation (compass) test ");
         var log = document.getElementById("log");
-        log.value += 'Start Device Orientation plugin to get compass heading\n';
+        log.value += 'Start Device Orientation plugin to get current heading\n';
         navigator.compass.getCurrentHeading(function (heading) {
                 log.value+='\tCompass heading: ' + heading.magneticHeading+'\n';
             },
             function (error) {
-                log.value+='\tCompass error " + error\n';
+                log.value+='\tCompass error ' + error +'\n';
             });
     },
     testFile: function () {
@@ -145,6 +134,12 @@ var app = {
     },
 
     testGeolocation: function () {
+        /* Need to set the following keys in the Info.plist to pop up the access to geolocation dialog
+         <key>NSLocationAlwaysUsageDescription</key>
+         <string>This app requires constant access to your location, even when the screen is off.</string>
+         <key>NSLocationWhenInUseUsage</key>
+         <string>This app would like to access your location.</string>
+        */
         alert("Start Geolocation, get current position");
         log.value+="Start Geolocation, get current position \n";
         navigator.geolocation.getCurrentPosition(
@@ -163,16 +158,17 @@ var app = {
             })
     },
     testGlobalization: function () {
-        log.value+="Globalization test - obj is " + navigator.globalization+"\n";
+        log.value+="Globalization test " + navigator.globalization+"\n";
 
     },
     testInAppBrowser: function () {
-        // Must have app transport settings set to arbitrary load to yes in the Info.plist for your project to allow this
-        // <key>NSAppTransportSecurity</key>
-        //  <dict>
-        //      <key>NSAllowsArbitraryLoads</key>
-        //      <true/>
-        //  </dict>
+        /* Must have app transport settings set to arbitrary load to yes in the Info.plist for your project to allow this
+         <key>NSAppTransportSecurity</key>
+          <dict>
+              <key>NSAllowsArbitraryLoads</key>
+              <true/>
+          </dict>
+        */
         log.value+='InAppBrowser test - open phonegap.com ' + cordova.InAppBrowser.open('http://phonegap.com', '_blank', 'location=yes')+'\n';
     },
     testVibration: function () {
@@ -192,6 +188,7 @@ var app = {
         function onSuccess(imageData) {
             var image = document.getElementById('myImage');
             image.src = "data:image/jpeg;base64," + imageData;
+            image.setAttribute('style', 'display:block;');
         }
 
         function onFail(message) {
@@ -212,7 +209,6 @@ var app = {
                 path = mediaFiles[i].fullPath;
                 console.log("Capture Success");
                 log.value+='\tmedia Capture success \n';
-                //log.value+='\tmedia Capture success ' + path + '\n';
             }
         };
 
