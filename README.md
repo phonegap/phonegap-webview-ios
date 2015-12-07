@@ -27,11 +27,11 @@ all of the Cordova dependency pods.
   - Type `pod init` to create a base Podfile
   - Open it and replace the contents with those from the [Podfile_sample](Podfile_sample) prior to the `target` specification lines ([see demo video](https://www.youtube.com/watch?v=AzGmTeMsXxI))  
 3. Run `pod install` from command line to install the Cordova dependencies
+![Install](_imgs/install.png)
 4. Close your Xcode project 
 5. Open the newly created `.xcworkspace` file created from the `pod install`. 
-![Install and Open](_imgs/step-install.png)
 6. Note the new Pods folder with the Cordova dependencies is now included:
-![Pods in Native Project](_imgs/step-pods.png)
+![Pods in Native Project](_imgs/pods.png)
 7. Now use a Cordova View in your native project. Open the **Main.storyboard** file 
 and change the Custom Class value from the default `ViewController` to a `CDVViewController` in the *Identity Inspector*  
 ![Create Single View Project](_imgs/step-vc.png)
@@ -43,9 +43,8 @@ some messages indicating the use of some of the dependent plugins to ensure they
 **NOTE:** The [index.js](resources/www/js/index.js) code in the template project includes references to the device and network information plugins to 
 quickly test plugin setup.   
 
-![Running device plugin](_imgs/ss1.png)
-![Running connection plugin](_imgs/ss2.png)
-![Device Ready Fired](_imgs/ss3.png)	
+![Running device plugin](_imgs/run1.png)
+![Running connection plugin](_imgs/run2.png)	
 
 
 ### Tips
