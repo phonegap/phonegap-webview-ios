@@ -24,7 +24,7 @@ pod 'cordova-plugin-network-information'
 pod 'cordova-plugin-splashscreen'
 pod 'cordova-plugin-inappbrowser'
 pod 'cordova-plugin-file-transfer'
-pod 'cordova-plugin-statusbar’
+pod 'cordova-plugin-statusbar'
 pod 'cordova-plugin-vibration'
 
 # The following includes the PhoneGap iOS Platform Project Template for a quick start
