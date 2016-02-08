@@ -30,8 +30,8 @@ all of the Cordova dependency pods.
 ![Install](_imgs/install.png)
 4. Close your Xcode project 
 5. Open the newly created `.xcworkspace` file created from the `pod install`. 
-6. Note the new Pods folder with the Cordova dependencies is now included:
-![Pods in Native Project](_imgs/pods.png)
+6. Note the new `Pods` folder with the Cordova dependencies is now included:
+![Pods in Native Project](_imgs/pods-workspace.png)
 7. Now use a Cordova View in your native project. Open the **Main.storyboard** file 
 and change the Custom Class value from the default `ViewController` to a `CDVViewController` in the *Identity Inspector*  
 ![Create Single View Project](_imgs/step-vc.png)
@@ -39,6 +39,8 @@ and change the Custom Class value from the default `ViewController` to a `CDVVie
 ### Run it
 Build/run the app in Xcode. You should see the custom iOS template version of the PhoneGap Hello world sample running with the Device Ready event firing and 
 some messages indicating the use of some of the dependent plugins to ensure they've been properly referenced. 
+
+![PhoneGap iOS Template in Native Project](_imgs/ios-template.png)
 
 **NOTE:** The [index.js](resources/www/js/index.js) code in the template project includes references to the device and network information plugins to 
 quickly test plugin setup.   
