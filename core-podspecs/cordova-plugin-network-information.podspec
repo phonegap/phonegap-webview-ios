@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
 
-  s.name         = "cordova-plugin-inappbrowser"
-  s.version      = "1.0.1"  
-  s.summary      = "Cordova InAppBrowser Plugin"
+  s.name         = "cordova-plugin-network-information"
+  s.version      = "1.2.0"  
+  s.summary      = "Cordova Network Information Plugin"
   
-  s.description  = <<-DESC "This plugin provides a web browser view that displays when calling cordova.InAppBrowser.open()."
+  s.description  = <<-DESC "This plugin provides an implementation of an old version of the Network Information API. It provides information about the device's cellular and wifi connection, and whether the device has an internet connection."
   DESC
   
-  s.homepage     = "https://github.com/apache/cordova-plugin-inappbrowser"
+  s.homepage     = "https://github.com/apache/cordova-plugin-network-information"
   
   s.license      = { :type => "Apache License, Version 2.0", :text => <<-LICENSE
     "type": "Apache License, Version 2.0",
@@ -16,12 +16,12 @@ Pod::Spec.new do |s|
   }
 
 
-  s.author       = { "The Adobe PhoneGap Team" => "" }
-  s.platform     = :ios, "6.0"
-  s.source       = { :git => "https://github.com/apache/cordova-plugin-inappbrowser.git", :tag => "1.0.1" }
+  s.author             = { "The Adobe PhoneGap Team" => "" }
+  s.platform     = :ios, "8.0"
+  s.source       = { :git => "https://github.com/apache/cordova-plugin-network-information.git", :tag => "1.2.0" }
   s.source_files  = "src/ios/*.{h,m}"
   s.preserve_paths = "*.md","docs/**/*.md","www/*.js","www/ios/*.js"
   s.requires_arc = true
-  s.dependency "Cordova", ">= 3.0.0"
+  s.dependency "Cordova", ">= 4.0.1"
     
 end

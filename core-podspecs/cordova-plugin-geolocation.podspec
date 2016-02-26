@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
 
-  s.name         = "cordova-plugin-statusbar"
-  s.version      = "1.0.1"  
-  s.summary      = "Cordova StatusBar Plugin"
+  s.name         = "cordova-plugin-geolocation"
+  s.version      = "2.1.0"  
+  s.summary      = "Cordova Geolocation Plugin"
   
-  s.description  = <<-DESC "The StatusBar plugin provides some functions to customize the iOS StatusBar"
+  s.description  = <<-DESC "This plugin provides information about the device's location, such as latitude and longitude. "
   DESC
   
-  s.homepage     = "https://github.com/apache/cordova-plugin-statusbar"
+  s.homepage     = "https://github.com/apache/cordova-plugin-geolocation"
   
   s.license      = { :type => "Apache License, Version 2.0", :text => <<-LICENSE
     "type": "Apache License, Version 2.0",
@@ -17,11 +17,11 @@ Pod::Spec.new do |s|
 
 
   s.author             = { "The Adobe PhoneGap Team" => "" }
-  s.platform     = :ios, "6.0"
-  s.source       = { :git => "https://github.com/apache/cordova-plugin-statusbar.git", :tag => "1.0.1" }
+  s.platform     = :ios, "8.0"
+  s.source       = { :git => "https://github.com/apache/cordova-plugin-geolocation.git", :tag => "2.1.0" }
   s.source_files  = "src/ios/*.{h,m}"
   s.preserve_paths = "*.md","docs/**/*.md","www/*.js","www/ios/*.js"
   s.requires_arc = true
-  s.dependency "Cordova", ">= 3.0.0"
+  s.dependency "Cordova", ">= 4.0.1"
     
 end

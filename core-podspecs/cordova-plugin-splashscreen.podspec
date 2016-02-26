@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
 
-  s.name         = "cordova-plugin-device"
-  s.version      = "1.0.1"  
-  s.summary      = "Cordova Device Plugin"
+  s.name         = "cordova-plugin-splashscreen"
+  s.version      = "2.1.0"  
+  s.summary      = "Cordova Splash Screen Plugin"
   
-  s.description  = <<-DESC "This plugin defines a global device object, which describes the device's hardware and software."
+  s.description  = <<-DESC "The Splash Screen plugin displays and hides a splash screen during application launch"
   DESC
   
-  s.homepage     = "https://github.com/apache/cordova-plugin-device"
+  s.homepage     = "https://github.com/apache/cordova-plugin-splashscreen"
   
   s.license      = { :type => "Apache License, Version 2.0", :text => <<-LICENSE
     "type": "Apache License, Version 2.0",
@@ -17,11 +17,11 @@ Pod::Spec.new do |s|
 
 
   s.author             = { "The Adobe PhoneGap Team" => "" }
-  s.platform     = :ios, "6.0"
-  s.source       = { :git => "https://github.com/apache/cordova-plugin-device.git", :tag => "1.0.1" }
+  s.platform     = :ios, "8.0"
+  s.source       = { :git => "https://github.com/apache/cordova-plugin-splashscreen.git", :tag => "2.1.0" }
   s.source_files  = "src/ios/*.{h,m}"
   s.preserve_paths = "*.md","docs/**/*.md","www/*.js","www/ios/*.js"
   s.requires_arc = true
-  s.dependency "Cordova", ">= 3.0.0"
+  s.dependency "Cordova", ">= 4.0.1"
     
 end
