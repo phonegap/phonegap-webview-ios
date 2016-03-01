@@ -75,19 +75,18 @@ for *Objective-C bridging header*. An example is shown below:
 
 3. Now go back to your bridge header file and import the header files for the Cordova classes you wish to use in your project. For example:
 
-      #ifndef bridge_header_h
-      #define bridge_header_h
-
-      #import "CDVViewController.h"
-
-      #endif /* bridge_header_h */
+          #ifndef bridge_header_h
+          #define bridge_header_h
+    
+          #import "CDVViewController.h"
+    
+          #endif /* bridge_header_h */
 
 4. Once the headers have been added to your bridging file, you can starting using them in your Swift code directly. For instance, in
 a `ViewController.swift` file you might use something like the following to extend the `CDVViewController` class and resize the webview frame:
   
           import UIKit
-          class SecondViewController: CDVViewController {
-  
+          class SecondViewController: CDVViewController {  
               override func viewDidLoad() {
                    super.viewDidLoad()
                   // Do any additional setup after loading the view, typically from a nib.
