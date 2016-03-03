@@ -312,12 +312,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
                 "window"
             ]
         },
-        {
-            "file": "plugins/cordova-plugin-file/www/browser/isChrome.js",
-            "id": "cordova-plugin-file.isChrome",
-            "pluginId": "cordova-plugin-file",
-            "runs": true
-        },
+
         {
             "file": "plugins/cordova-plugin-file/www/ios/FileSystem.js",
             "id": "cordova-plugin-file.iosFileSystem",
