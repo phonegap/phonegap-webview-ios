@@ -1,4 +1,5 @@
-cordova.define("cordova-plugin-contacts.ContactError", function(require, exports, module) { /*
+cordova.define("cordova-plugin-contacts.ContactError", function(require, exports, module) {
+/*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -37,6 +38,7 @@ ContactError.TIMEOUT_ERROR = 2;
 ContactError.PENDING_OPERATION_ERROR = 3;
 ContactError.IO_ERROR = 4;
 ContactError.NOT_SUPPORTED_ERROR = 5;
+ContactError.OPERATION_CANCELLED_ERROR = 6;
 ContactError.PERMISSION_DENIED_ERROR = 20;
 
 module.exports = ContactError;

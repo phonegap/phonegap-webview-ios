@@ -1,4 +1,5 @@
-cordova.define("cordova-plugin-file.FileSystem", function(require, exports, module) { /*
+cordova.define("cordova-plugin-file.FileSystem", function(require, exports, module) {
+/*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -44,6 +45,13 @@ FileSystem.prototype.__format__ = function(fullPath, nativeUrl) {
 FileSystem.prototype.toJSON = function() {
     return "<FileSystem: " + this.name + ">";
 };
+
+// Use instead of encodeURI() when encoding just the path part of a URI rather than an entire URI.
+FileSystem.encodeURIPath = function(path) {
+    // Because # is a valid filename character, it must be encoded to prevent part of the
+    // path from being parsed as a URI fragment.
+    return encodeURI(path).replace(/#/g, '%23');
+}
 
 module.exports = FileSystem;
 

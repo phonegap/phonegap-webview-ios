@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.source_files  = "src/ios/*.{h,m}"
   s.preserve_paths = "*.md","docs/**/*.md","www/*.js","www/ios/*.js"
   s.requires_arc = true
-  s.frameworks = "AssetsLibrary"
+  s.frameworks = "AssetsLibrary"  
   s.dependency "Cordova", ">= 4.0.1"
   s.dependency 'cordova-plugin-file'
     
