@@ -58,6 +58,11 @@ quickly test plugin setup.
 - You may need to change the version of platform specified or specify certain versions for other plugins.
 - If you update anything in the podfile where you have to run a `pod install` again, you must close the Workspace project in Xcode and open the newly generated one. 
 
+### Info.plist Keys
+- To support the Geolocation plugin, you'll need to add this key to your Info.plist in your Xcode project:
+
+    	<key>NSLocationWhenInUseUsageDescription</key>
+    	<string></string>
 
 ### Swift-Based Projects
 As mentioned above, you can use Swift-based projects with Cordova using the same CocoaPods approach just described. You will need to add a bridging header
