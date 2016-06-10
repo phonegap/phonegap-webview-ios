@@ -3,7 +3,7 @@
 # This file must simply be named Podfile in your native iOS project
 
 # Define a global platform for your project
-platform :ios, '8.0'
+platform :ios, '9.0'
 
 # CordovaLib Dependency Pod
 pod 'Cordova'

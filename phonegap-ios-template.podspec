@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name               = "phonegap-ios-template"
-  s.version            = "0.2.0"
+  s.version            = "0.2.2"
   s.summary            = "PhoneGap sample template project for iOS."
 
   s.description        = <<-DESC "A PhoneGap sample project to get started quickly with an embedded webview in a native iOS project."
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage           = "https://github.com/phonegap/phonegap-webview-ios"
   s.author             = { "The Adobe PhoneGap Team" => "" }
   s.social_media_url   = "http://twitter.com/phonegap"
-  s.source             = { :git => "https://github.com/phonegap/phonegap-webview-ios.git", :tag => "0.2.0" }
+  s.source             = { :git => "https://github.com/phonegap/phonegap-webview-ios.git", :tag => "0.2.1" }
   s.resources          = "resources/*"
 
 end
