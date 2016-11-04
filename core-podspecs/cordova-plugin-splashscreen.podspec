@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "cordova-plugin-splashscreen"
-  s.version      = "2.1.0"  
+  s.version      = "4.0.0"  
   s.summary      = "Cordova Splash Screen Plugin"
   
   s.description  = <<-DESC "The Splash Screen plugin displays and hides a splash screen during application launch"
@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
 
   s.author             = { "The Adobe PhoneGap Team" => "" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/apache/cordova-plugin-splashscreen.git", :tag => "2.1.0" }
+  s.source       = { :git => "https://github.com/apache/cordova-plugin-splashscreen.git", :tag => "4.0.0" }
   s.source_files  = "src/ios/*.{h,m}"
   s.preserve_paths = "*.md","docs/**/*.md","www/*.js","www/ios/*.js"
   s.requires_arc = true
-  s.dependency "Cordova", ">= 4.0.1"
+  s.dependency "Cordova", ">= 4.3.0"
     
 end

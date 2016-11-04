@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "cordova-plugin-device-orientation"
-  s.version      = "1.0.2"  
+  s.version      = "1.0.4"  
   s.summary      = "Cordova Device Orientation Plugin"
   
   s.description  = <<-DESC "This plugin provides access to the device's compass. The compass is a sensor that detects the direction or heading that the device is pointed, typically from the top of the device."
@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
 
   s.author             = { "The Adobe PhoneGap Team" => "" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/apache/cordova-plugin-device-orientation.git", :tag => "1.0.2" }
+  s.source       = { :git => "https://github.com/apache/cordova-plugin-device-orientation.git", :tag => "1.0.4" }
   s.source_files  = "src/ios/*.{h,m}"
   s.preserve_paths = "*.md","docs/**/*.md","www/*.js","www/ios/*.js"
   s.requires_arc = true
-  s.dependency "Cordova", ">= 4.0.1"
+  s.dependency "Cordova", ">= 4.3.0"
     
 end

@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "cordova-plugin-media-capture"
-  s.version      = "1.2.0"  
+  s.version      = "1.4.0"  
   s.summary      = "Cordova Media Capture Plugin"
   
   s.description  = <<-DESC "This plugin provides access to the device's audio, image, and video capture capabilities."
@@ -17,13 +17,13 @@ Pod::Spec.new do |s|
 
   s.author             = { "The Adobe PhoneGap Team" => "" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/apache/cordova-plugin-media-capture.git", :tag => "1.2.0" }
+  s.source       = { :git => "https://github.com/apache/cordova-plugin-media-capture.git", :tag => "1.4.0" }
   s.source_files  = "src/ios/*.{h,m}"
   s.preserve_paths = "*.md","docs/**/*.md","www/*.js","www/ios/*.js"
   s.requires_arc = true
   s.frameworks = "CoreGraphics","MobileCoreServices","CoreMedia"
   s.weak_frameworks = "ImageIO"
-  s.dependency "Cordova", ">= 4.0.1"
+  s.dependency "Cordova", ">= 4.3.0"
   s.dependency 'cordova-plugin-file'
 
 end

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "cordova-plugin-statusbar"
-  s.version      = "2.1.1"  
+  s.version      = "2.2.0"  
   s.summary      = "Cordova StatusBar Plugin"
   
   s.description  = <<-DESC "The StatusBar plugin provides some functions to customize the iOS StatusBar"
@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
 
   s.author             = { "The Adobe PhoneGap Team" => "" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/apache/cordova-plugin-statusbar.git", :tag => "2.1.1" }
+  s.source       = { :git => "https://github.com/apache/cordova-plugin-statusbar.git", :tag => "2.2.0" }
   s.source_files  = "src/ios/*.{h,m}"
   s.preserve_paths = "*.md","docs/**/*.md","www/*.js","www/ios/*.js"
   s.requires_arc = true
-  s.dependency "Cordova", ">= 4.0.1"
+  s.dependency "Cordova", ">= 4.3.0"
     
 end

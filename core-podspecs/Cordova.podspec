@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Cordova"
-  s.version      = "4.2.1"  
+  s.version      = "4.3.0"  
   s.summary      = "Cordova iOS"
   
   s.description  = <<-DESC "Apache Cordova is a platform for building native mobile applications using HTML, CSS and JavaScript."
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   
   s.author             = { "The Adobe PhoneGap Team" => "" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/apache/cordova-ios.git", :tag => "4.2.1" }
+  s.source       = { :git => "https://github.com/apache/cordova-ios.git", :tag => "4.3.0" }
   s.source_files  = "CordovaLib/Classes/Public/*.{h,m}","CordovaLib/Classes/Private/*.{h,m}","CordovaLib/Classes/Private/Plugins/*/*.{h,m}","CordovaLib/Classes/Private/Plugins/CDVGestureHandler/*.{h,m}","CordovaLib/Classes/Private/Plugins/CDVLocalStorage/*.{h,m}",
   "CordovaLib/Classes/Private/Plugins/CDVUIWebViewEngine/*.{h,m}","CordovaLib/Classes/Private/Plugins/CDVHandleOpenURL/*.{h,m}"
   s.preserve_paths = "CordovaLib/cordova.js","CordovaLib/VERSION"

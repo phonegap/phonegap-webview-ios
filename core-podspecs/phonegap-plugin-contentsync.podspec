@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "phonegap-plugin-contentsync"
-  s.version      = "1.2.4"  
+  s.version      = "1.2.6"  
   s.summary      = "PhoneGap Content Sync Plugin"
   
   s.description  = <<-DESC "Download and cache remotely hosted content."
@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
 
   s.author       = { "The Adobe PhoneGap Team" => "" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/phonegap/phonegap-plugin-contentsync.git", :tag => "1.2.4" }
+  s.source       = { :git => "https://github.com/phonegap/phonegap-plugin-contentsync.git", :tag => "v1.2.6" }
   s.source_files  = "src/ios/*.{h,m}"
   s.preserve_paths = "*.md","docs/**/*.md","www/*.js","www/ios/*.js"
   s.requires_arc = true
-  s.dependency "Cordova", ">= 4.0.1"
+  s.dependency "Cordova", ">= 4.3.0"
     
 end

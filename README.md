@@ -21,7 +21,7 @@ all of the Cordova dependency pods.
 4. You're ready to use any of the Cordova dependencies, for example the `CDVViewController`. See below for further details. 
 
 ### Detailed Usage - Embedding Cordova in a Native iOS Project
-[Short Demo Video](https://www.youtube.com/watch?v=M6Q6ak7UfvQ)
+[Short Demo Video](https://www.youtube.com/watch?v=6_Gq_SwpNwg)
 
 **NOTE:** This project assumes you have [previously installed CocoaPods](https://guides.cocoapods.org/using/getting-started.html) 
 
@@ -59,10 +59,34 @@ quickly test plugin setup.
 - If you update anything in the podfile where you have to run a `pod install` again, you must close the Workspace project in Xcode and open the newly generated one. 
 
 ### Info.plist Keys
-- To support the Geolocation plugin, you'll need to add this key to your Info.plist in your Xcode project:
+If you're using the project with all the plugins included, you'll want to update the `Info.plist` file in your native project 
+to include the following keys (noted in raw values):
 
-    	<key>NSLocationWhenInUseUsageDescription</key>
-    	<string></string>
+1. Camera - must set the `NSCameraUsageDescription` and `NSPhotoLibraryUsageDescriptionentry` keys
+1. Contacts - must set the `NSContactsUsageDescription` key
+1. Media Capture - must set the `NSMicrophoneUsageDescription` key
+1. Geolocation - must set the `NSLocationAlwaysUsageDescription` or `NSLocationWhenInUseUsageDescription` keys
+
+Once the above keys are set, the app will do the proper prompting the user showing the usage string you set or blank if you left it blank as shown below:
+
+![Contacts Usage](_imgs/contacts-setting.png)
+![Location Usage](_imgs/location-setting.png)
+![Mic Usage](_imgs/mic-setting.png)
+
+If you use the **InAppBrowser** plugin to load `http://` URL's, you will also receive this error:
+
+```
+App Transport Security has blocked a cleartext HTTP (http://) resource load since it is insecure. Temporary exceptions can be configured via your app's Info.plist file.
+InAppBrowser - webView:didFailLoadWithError - -1022: The resource could not be loaded because the App Transport Security policy requires the use of a secure connection.
+```
+
+And will need to set the `NSAppTransportSecurity`. If you set it to `NSAllowsArbitraryLoads = YES` it will allow all URL's but is not secure. For
+more options on this setting and the above, check out the official [Apple Documentation](https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html). 
+
+Sample **Info.plist** files are shown here with those values set in normal string and raw key formats:
+![plist sample](_imgs/plist1.png)
+![plist sample](_imgs/plist.png)
+
 
 ### Swift-Based Projects
 As mentioned above, you can use Swift-based projects with Cordova using the same CocoaPods approach just described. You will need to add a bridging header
@@ -115,3 +139,4 @@ a `ViewController.swift` file you might use something like the following to exte
   
 ### More Resources
 - [InstaSnap Sample Hybrid App](https://github.com/imhotep/InstaSnap) - another sample hybrid iOS app with step by step instructions used for a PhoneGap Day 2016 workshop.  
+

@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "cordova-plugin-file"
-  s.version      = "4.2.0"  
+  s.version      = "4.3.0"  
   s.summary      = "Cordova File Plugin"
   
   s.description  = <<-DESC "This plugin implements a File API allowing read/write access to files residing on the device."
@@ -17,10 +17,10 @@ Pod::Spec.new do |s|
   
   s.author             = { "The Adobe PhoneGap Team" => "" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/apache/cordova-plugin-file.git", :commit => "8d7191d8e6ab4187b58144e80299db0c8490afe2" }
+  s.source       = { :git => "https://github.com/apache/cordova-plugin-file.git", :tag => "4.3.0" }
   s.source_files  = "src/ios/*.{h,m}"
   s.preserve_paths = "*.md","docs/**/*.md","www/*.js","www/ios/*.js"
   s.requires_arc = true
   s.frameworks = "AssetsLibrary","MobileCoreServices"
-  s.dependency "Cordova", ">= 4.0.1"
+  s.dependency "Cordova", ">= 4.3.0"
 end

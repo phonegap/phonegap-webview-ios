@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "cordova-plugin-wkwebview-engine"
-  s.version      = "1.0.2"  
+  s.version      = "1.1.0"  
   s.summary      = "Cordova WKWebView Engine Plugin"
   
   s.description  = <<-DESC "This plugin allows Cordova to use the WKWebView component instead of the default UIWebView component, and is installable only on a system with the iOS 9.0 SDK."
@@ -15,11 +15,11 @@ Pod::Spec.new do |s|
     LICENSE
   }
   
-  s.author             = { "The Adobe PhoneGap Team" => "" }
+  s.author       = { "The Adobe PhoneGap Team" => "" }
   s.platform     = :ios, "9.0"
-  s.source       = { :git => "https://github.com/apache/cordova-plugin-wkwebview-engine", :tag => "1.0.2" }
+  s.source       = { :git => "https://github.com/apache/cordova-plugin-wkwebview-engine.git", :tag => "1.1.0" }
   s.source_files  = "src/ios/*.{h,m}"
   s.preserve_paths = "*.md","docs/**/*.md","www/*.js","www/ios/*.js"
   s.requires_arc = true
-  s.dependency "Cordova", ">= 4.0.1"
+  s.dependency "Cordova", ">= 4.3.0"
 end

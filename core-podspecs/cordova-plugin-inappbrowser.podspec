@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "cordova-plugin-inappbrowser"
-  s.version      = "1.3.0"  
+  s.version      = "1.5.0"  
   s.summary      = "Cordova InAppBrowser Plugin"
   
   s.description  = <<-DESC "This plugin provides a web browser view that displays when calling cordova.InAppBrowser.open()."
@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
 
   s.author       = { "The Adobe PhoneGap Team" => "" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/apache/cordova-plugin-inappbrowser.git", :tag => "1.3.0" }
+  s.source       = { :git => "https://github.com/apache/cordova-plugin-inappbrowser.git", :tag => "1.5.0" }
   s.source_files  = "src/ios/*.{h,m}"
   s.preserve_paths = "*.md","docs/**/*.md","www/*.js","www/ios/*.js"
   s.requires_arc = true
-  s.dependency "Cordova", ">= 4.0.1"
+  s.dependency "Cordova", ">= 4.3.0"
     
 end
