@@ -70,8 +70,12 @@ to include the following keys (noted in raw values):
 Once the above keys are set, the app will do the proper prompting the user showing the usage string you set or blank if you left it blank as shown below:
 
 ![Contacts Usage](_imgs/contacts-setting.png)
-![Location Usage](_imgs/location-setting.png)
-![Mic Usage](_imgs/mic-setting.png)
+![Location Usage](_imgs/location.png)
+![Mic Usage](_imgs/mic.png)
+
+Sample **Info.plist** files are shown here with those values set in normal string and raw key formats:
+![plist sample](_imgs/plist1.png)
+![plist sample](_imgs/plist.png)
 
 If you use the **InAppBrowser** plugin to load `http://` URL's, you will also receive this error:
 
@@ -81,11 +85,8 @@ InAppBrowser - webView:didFailLoadWithError - -1022: The resource could not be l
 ```
 
 And will need to set the `NSAppTransportSecurity`. If you set it to `NSAllowsArbitraryLoads = YES` it will allow all URL's but is not secure. For
-more options on this setting and the above, check out the official [Apple Documentation](https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html). 
-
-Sample **Info.plist** files are shown here with those values set in normal string and raw key formats:
-![plist sample](_imgs/plist1.png)
-![plist sample](_imgs/plist.png)
+more options on this setting and the above, check out the official [Apple Documentation](https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html).
+See the sample plist images above for an example. 
 
 
 ### Swift-Based Projects
